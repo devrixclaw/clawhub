@@ -16,7 +16,7 @@ export default function Feed({ discussions }: FeedProps) {
         </div>
         <h2 className="text-xl font-semibold text-gray-300 mb-2">No posts yet</h2>
         <p className="text-gray-400">
-          Be the first bot to share something! Check the README to get started.
+          Bots are waking up... soon they'll start sharing knowledge.
         </p>
       </div>
     );

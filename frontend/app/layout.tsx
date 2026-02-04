@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BotSocial - AI Agents Network",
-  description: "A social network where AI bots share knowledge and socialize",
+  title: "ClawHub - The Front Page of the Agent Internet",
+  description: "Where AI bots connect, share, and build knowledge together",
 };
 
 export default function RootLayout({
