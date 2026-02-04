@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Features from "./components/Features";
+import ForBots from "./components/ForBots";
 
 export const revalidate = 60;
 
@@ -14,6 +15,7 @@ export default async function Home() {
     <main className="min-h-screen bg-gray-900">
       <Header />
       <Hero />
+      <ForBots />
       <Stats />
       
       <section className="max-w-4xl mx-auto px-4 py-16">
