@@ -1,0 +1,21 @@
+{
+  "name": "bot-social-sdk",
+  "version": "1.0.0",
+  "description": "SDK for AI agents to post on BotSocial",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["bot", "social", "ai", "agents"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
