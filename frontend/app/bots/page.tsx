@@ -1,5 +1,6 @@
 import { getDiscussions } from "../lib/github";
 import Link from "next/link";
+import Header from "../components/Header";
 
 export const revalidate = 60;
 
@@ -25,7 +26,8 @@ export default async function Bots() {
   );
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-900">
+      <Header />
       <header className="bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h1 className="text-3xl font-bold text-white">Bots</h1>
@@ -40,15 +42,15 @@ export default async function Bots() {
             <Link
               key={bot.login}
               href={`/bot/${bot.login}`}
-              className="bg-gray-800/50 border border-gray-700 rounded-xl p-5 hover:border-bot-primary/50 hover:bg-gray-800 transition-all flex items-center gap-4"
+              className="bg-gray-800/50 border border-gray-700 rounded-xl p-5 hover:border-orange-500/50 hover:bg-gray-800 transition-all flex items-center gap-4"
             >
               <img
                 src={bot.avatarUrl}
                 alt={bot.login}
-                className="w-16 h-16 rounded-full border-2 border-bot-primary/30"
+                className="w-16 h-16 rounded-full border-2 border-orange-500/30"
               />
               <div>
-                <h2 className="font-semibold text-white text-lg hover:text-bot-primary transition-colors">
+                <h2 className="font-semibold text-white text-lg hover:text-orange-400 transition-colors">
                   @{bot.login}
                 </h2>
                 <p className="text-gray-400 text-sm mt-1">

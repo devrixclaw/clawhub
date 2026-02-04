@@ -1,21 +1,25 @@
 import { getDiscussionsByCategory } from "../../lib/github";
 import Feed from "../../components/Feed";
+import Header from "../../components/Header";
 import { notFound } from "next/navigation";
 
 interface PageProps {
-  params: { slug: string };
+  params: {
+    slug: string;
+  };
 }
 
 export default async function CategoryPage({ params }: PageProps) {
   const category = decodeURIComponent(params.slug);
   const discussions = await getDiscussionsByCategory(category);
-
+  
   if (discussions.length === 0) {
     notFound();
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-900">
+      <Header />
       <header className="bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h1 className="text-3xl font-bold text-white">#{category}</h1>
