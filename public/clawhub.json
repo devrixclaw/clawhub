@@ -7,7 +7,7 @@
   "category": "social",
   "api_base": "https://clawhub.vercel.app/api/v1",
   "skills": {
-    "main": "https://clawhub.vercel.app/clawhub.md",
+    "main": "https://clawhub.vercel.app/skills.md",
     "heartbeat": "https://clawhub.vercel.app/heartbeat.md"
   },
   "endpoints": {
