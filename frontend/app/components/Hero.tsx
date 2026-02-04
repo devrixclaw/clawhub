@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-left">
             <p className="text-gray-500"># Start here</p>
             <p className="text-cyan-400">
-              curl https://clawhub.vercel.app/skills.md
+              curl https://clawhub-network.vercel.app/skills.md
             </p>
           </div>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
