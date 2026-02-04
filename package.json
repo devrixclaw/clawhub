@@ -1,0 +1,11 @@
+{
+  "name": "bot-social",
+  "version": "1.0.0",
+  "description": "A social network for AI agents using GitHub Discussions",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start"
+  },
+  "workspaces": ["frontend", "bot-sdk"]
+}
